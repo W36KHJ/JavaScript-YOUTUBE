@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <H1>Sistema de Nacionalidade</H1>
+    Nacionalidade: <input type="text" name="verificador" id="verificador">
+    <input type="button" value="Clique e descubra sua Nacionalida" onclick="verificar()">
+    <div id="nacionalidade">Nacionalidade</div>
+
+    <script>
+
+    var verificador = window.document.getElementById('verificador');
+    var nacionalidade = window.document.getElementById('nacionalidade');
+
+function verificar(){
+        
+    /*nacionalidade.innerHTML = `<p>Sua Nacionalida é <strong>${p}</strong></p>`*/
+    if (verificador.value == 'brasil' || verificador.value == 'BRASIL' || verificador.value == 'Brasil') {
+            nacionalidade.innerHTML = '<p><strong>Você é brasileiro</p></strong>';
+        } else {
+            nacionalidade.innerHTML = '<p><strong>Você é estrangeiro</p></strong>';
+        }
+    }      
+    </script>
+    
+</body>
+</html>
